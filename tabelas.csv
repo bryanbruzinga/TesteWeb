@@ -1,0 +1,568 @@
+"PADRÃO TISSorganizacionalMarço 2021"
+""
+"PADRÃO TISSorganizacionalMarço 2021"
+organizacional
+"PADRÃO TISSorganizacionalMarço 2021",
+"",
+"PADRÃO TISSorganizacionalMarço 2021"
+""
+"PADRÃO TISSorganizacionalMarço 2021",,,
+"",,,organizacional
+"",,,
+Entidades,Sigla,Termos/Requisitos
+Associação Médica Brasileira,AMB,Termos de medicina
+Conselho Federal de Odontologia,CFO,Termos de odontologia
+"",,"Termos de medicamentos,"
+Agência Nacional de Vigilância Sanitária,ANVISA,
+"",,"materiais, próteses e órteses"
+"",,"Termos de diárias, taxas e gases"
+Confederação Nacional de Saúde,CNS,
+"",,medicinais
+Sociedade Brasileira de Informática em,,Requisitos de segurança e
+"",SBIS,
+Saúde,,privacidade das informações
+Código,,,,Registro
+"",Termo,Modelo,Fabricante,
+do Termo,,,,Anvisa
+71447180,STENT PARA ARTÉRIAS CORONÁRIAS,Não se aplica*,Não se aplica*,Não se aplica*
+71126619,STENT CORONÁRIANO BLUE MEDICAL,Não se aplica*,,
+"",,,NEOMEX HOSPITALAR LTDA,80152120014
+71126627,STENT CORONÁRIANO BLUE MEDICAL - XT2010S,XT2010S,,
+"",,,NEOMEX HOSPITALAR LTDA,80152120014
+"",COROFLEX - STENT CORONARIO EM BALAO,,,
+71413057,EXPANSIVEL MONTADA EM CATÉTER DE PTCA DE,Não se aplica*,,
+"",,,LABORATÓRIOS B. BRAUN S/A,10008530399
+"",TROCA RAPIDA,,,
+70726663,"COROFLEX - STENT CORONARIO EM BALAOEXPANSIVEL MONTADA EM CATÉTER DE PTCA DETROCA RAPIDA – 5020040",5020040,LABORATÓRIOS B. BRAUN S/A,10008530399
+"",Código,,Termo,Modelo,Fabricante,,Registro,
+"",Termo,Modelo,Fabricante,,,,,
+do Termo,Anvisa,,,,,,,
+71447199,STENT PARA ARTÉRIAS PERIFÉRICAS,Não se aplica*,Não se aplica*,Não se aplica*,,,,
+70960500,"XPERT PRO PERIPHERAL SELF-EXPANDINGSTENT",DIVERSAS,"ABBOTT LABORATÓRIOSDO BRASIL LTDA",80146501826,,,,
+70960518,"XPERT PRO PERIPHERAL SELF-EXPANDINGSTENT - 17525-100",17525-100,"ABBOTT LABORATÓRIOSDO BRASIL LTDA",80146501826,,,,
+70960526,"XPERT PRO PERIPHERAL SELF-EXPANDINGSTENT - 17525-20",17525-20,"ABBOTT LABORATÓRIOSDO BRASIL LTDA",80146501826,,,,
+70960534,"XPERT PRO PERIPHERAL SELF-EXPANDINGSTENT - 17525-30",17525-30,"ABBOTT LABORATÓRIOSDO BRASIL LTDA",80146501826,,,,
+70990476,STENT VASCULAR LIFESTENT,Não se aplica*,"BARD BRASIL INDÚSTRIA ECOMÉRCIO DE PRODUTOSPARA A SAÚDE LTDA.",80689090071,,,,
+70990484,STENT VASCULAR LIFESTENT - EX050201C,EX050201C,"BARD BRASIL INDÚSTRIA ECOMÉRCIO DE PRODUTOSPARA A SAÚDE LTDA.",80689090071,,,,
+Termo
+Termo
+Modelo
+Modelo
+Fabricante
+Fabricante
+Origem da,Nome da mensagem no,
+"",,Descrição
+mensagem,schema,
+"",,"Apresentação de cobrança de consultas,"
+"",,"SP/SADT, resumo de internação, honorários e"
+Prestador,LoteGuias,odontologia. Esta mensagem deve ter no
+"",,máximo cem guias de cobrança de um mesmo
+"",,tipo.
+"",,Apresentação do anexo de situação inicial de
+"",,odontologia e solicitação de autorização de
+Prestador,LoteAnexos,"tratamento de quimioterapia, radioterapia e"
+"",,OPME. Esta mensagem deve ter no máximo
+"",,cem anexos de um mesmo tipo.
+"",,Solicitação de demonstrativo de análise de
+"",SolicitaçãoDemonstrativoR,
+Prestador,,"conta de medicina, demonstrativo de"
+"",etorno,
+"",,pagamento de medicina e odontologia.
+"",,Solicita informação de lote de cobrança
+Prestador,SolicitaçãoStatusProtocolo,
+"",,recebido pela operadora.
+"",SolicitacaoStatusRecursoG,Solicita informação sobre recurso de glosa
+Prestador,,
+"",losa,enviado pelo prestador à operadora.
+"",,Solicitação de autorização de serviços de
+Prestador,SolicitaçãoProcedimento,"SP/SADT, internação, prorrogação de"
+"",,internação e tratamento em odontologia.
+"",,Solicita status sobre pedido de autorização
+Prestador,SolicitaStatusAutorização,
+"",,recebido pela operadora.
+"",,Solicita informação sobre a elegibilidade de um
+Prestador,VerificaElegibilidade,
+"",,beneficiário da operadora.
+"",,Envia solicitação de cancelamento de uma ou
+Prestador,CancelaGuia,
+"",,mais guias.
+"",,Envia comunicado de internação ou alta de um
+Prestador,ComunicaçãoInternação,
+"",,beneficiário.
+"",,Envia recurso sobre glosa ocorrida em um lote
+Prestador,RecursoGlosa,
+"",,ou em guias do prestador.
+"",,Envia um protocolo de recebimento de um lote
+Operadora,RecebimentoLote,
+"",,de guias de cobranças enviado pelo prestador.
+"",,Envia um protocolo de recebimento de um lote
+Operadora,RecebimentoAnexo,
+"",,de anexos enviado pelo prestador.
+"",,Envia um protocolo de recebimento do recurso
+Operadora,RecebimentoRecursoGlosa,
+"",,de glosa enviado pelo prestador.
+"",,Envia o demonstrativo de análise de conta de
+"",,"medicina, demonstrativo de pagamento de"
+"",,"medicina, demonstrativo de pagamento de"
+Operadora,DemonstrativosRetorno,odontologia ou situação do demonstrativo caso
+"",,este ainda não esteja pronto para ser enviado
+"",,ao prestador. Esta mensagem deve conter no
+"",,máximo trinta demonstrativos.
+"",,Informa a situação de um protocolo enviado
+Operadora,SituaçãoProtocolo,
+"",,pelo prestador.
+"",,Informa a autorização ou negativa para as
+"",,"solicitações de internação, tratamento"
+Operadora,AutorizaçãoServiços,
+"",,"odontológico, prorrogação de internação e"
+"",,"SP/SADT, quimioterapia, radioterapia e OPME."
+"",,Informa a situação sobre pedidos pendentes de
+"",,"autorização de prorrogação de internação,"
+Operadora,SituaçãoAutorização,
+"",,"tratamento odontológico, quimioterapia,"
+"",,"radioterapia, SP/SADT e OPME."
+"",,Envia resposta sobre a elegibilidade de
+Operadora,RespostaElegibilidade,
+"",,determinado beneficiário.
+"",,Envia recibo sobre recebimento de
+Operadora,ReciboCancelaGuia,
+"",,cancelamento de guia.
+"",,Envia recibo de recebimento de comunicação
+Operadora,ReciboComunicação,
+"",,de internação ou alta de beneficiário.
+"",,Envia resposta sobre recurso de glosa enviado
+Operadora,RespostaRecursoGlosa,
+"",,pelo prestador.
+"",,Envia ao beneficiário as informações de
+Operadora,Não se aplica,serviços de sua utilização (Utilização de
+"",,Serviços).
+"",,Envia ao beneficiário as informações acerca da
+Operadora,Não se aplica,
+"",,negativa de autorização.
+"",,Envio à beneficiária as informações relativas
+Operadora,Não se aplica,
+"",,aos procedimentos de parto.
+"",TissMonitoramentoQualida,Disponibiliza arquivo com indicação dos
+ANS,,
+"",de,lançamentos inconsistentes e motivos.
+151. A mensagem de Demonstrativos de Retorno tem como contingência o Relatório
+de Demonstrativo de Retorno.
+""
+152. A mensagem de Solicitação de Status de Protocolo não tem guia padronizada no
+plano de contingência.
+""
+153. A mensagem de Situação do Protocolo não tem guia padronizada no plano de
+contingência.
+""
+154. A mensagem Solicitação de Autorização para Realização de Procedimentos tem
+?,XTE quando tratar-se de um arquivo XML enviado pela operadora para a
+"",ANS;
+?,ZTE quando tratar-se de um arquivo compactado no padrão ZIP enviado
+"",pela operadora para a ANS;
+?,XTR quando tratar-se de um arquivo de retorno do tipo XML disponibilizado
+"",pela ANS para a operadora;
+?,ZTR quando tratar-se de um arquivo de retorno do tipo ZIP disponibilizado
+Status,Descrição
+Aguardando processamento,O arquivo foi recebido e ainda não foi processado pela ANS.
+"Nome do arquivo fora dopadrão","A nomenclatura do arquivo enviado não atende ao descrito naregra de formação do nome do arquivo."
+Processado,"O arquivo foi processado e todos os registros foram incluídosno banco de dados da ANS."
+"",O arquivo foi processado pela ANS e há uma quantidade de
+Processado parcialmente,registros que não foram incluídos no banco de dados da ANS
+"",por erros identificados.
+"",O arquivo não foi processado e nenhum registro foi incluído
+Rejeitado,
+"",no banco de dados da ANS.
+"","O arquivo foi enviado, dentro de um arquivo compactado, com"
+Sequência já enviada,
+"",um nome enviado anteriormente.
+"","O arquivo foi transmitido, porém não chegou de forma íntegra."
+Erro de transmissão,
+"",Deve-se enviar o arquivo novamente com outro nome.
+Em transmissão,O arquivo está sendo transmitido no momento da consulta.
+Compet.
+Compet.
+Compet.,Guia,Data Proc.,"ValorInformado","ValorProcessado","ValorLiberado",Valor,"ValorGlosa",Valor,"ValorPago",Valor,"DataPagto",Transação
+"",,,Valor,Valor,"DataPagto",,,,,,,
+Compet.,Guia,Data Proc.,Transação,,,,,,,,,
+"",,,nformad,Processado,,,,,,,,
+Jun/2014,120,15/06/2014,"100,00","100,00","100,00","0,00","0,00",,Inclusão,,,
+Jul/2014,120,15/07/2014,"100,00","100,00","100,00","0,00","100,00",15/07/2014,Inclusão,,,
+Guia
+Guia
+Data Proc.
+Data Proc.
+"ValorInformado"
+Valor
+nformad
+"ValorProcessado"
+Valor
+Processado
+"DataPagto"
+"DataPagto"
+Transação
+Transação
+Compet.
+""
+Compet.,Guia,Data Proc.,"ValorInformado","ValorProcessado",Valor,Valor,Valor,"DataPagto",Transação
+"",,,,,Valor,Valor,Valor,,
+"",,,Valor,Valor,"DataPagto",,,,
+"",,,Liberado,Glosa,Pago,,,,
+"",,,Informad,Processad,,,,,
+Jul/2014,150,21/07/2014,"200,00","180,00","180,00","20,00","0,00",,Inclusão
+Ago/2014,150,10/08/2014,"200,00","190,00","190,00","10,00","0,00",,Inclusão
+Set/2014,150,05/09/2014,"200,00","190,00","190,00","10,00","190,00",05/09/2014,Inclusão
+Nov/2014,150,05/09/2014,"200,00","190,00","190,00","10,00","190,00",10/09/2014,Alteração
+Guia
+""
+Data Proc.
+""
+"ValorInformado"
+Valor
+Informad
+"ValorProcessado"
+Valor
+Processad
+Valor
+Valor
+Valor
+Valor
+Valor
+Valor
+"DataPagto"
+"DataPagto"
+Transação
+""
+"",,,,,Valor Valor,Valor,,,
+"",,,Valor,Valor,,,Data,,
+Compet.,Guia,Data Proc.,,,,,,,Transação
+"",,,Informado,Processado,Pagto Liberado Glosa,Pago,,,
+Set/2014,200,21/09/2014,"500,00","450,00","450,00 50,00","0,00",,,Inclusão
+Out/2014,200,10/10/2014,"500,00","480,00","480,00 20,00","0,00",,,Inclusão
+Nov/2014,200,15/11/2014,"500,00","450,00","450,00 50,00","450,00",15/11/2014,,Inclusão
+Nov/2014,200,10/10/2014,"500,00","480,00","480,00 20,00","0,00",,,Exclusão
+"",,,,,Valor Valor,Valor,,,
+"",,,Valor,Valor,,,Data,,
+Compet.,Guia,Data Proc.,,,,,,,Transação
+"",,,Informado,Processado,Pagto Liberado Glosa,Pago,,,
+Set/2014,500,10/09/2014,"1.000,00","800,00","800,00 200,00","800,00",10/09/2014,,Inclusão
+Out/2014,500,10/10/2014,"1.000,00","1.000,00","200,00 0,00","200,00",10/10/2014,,Inclusão
+"",,,,,Valor Valor,Valor,,,
+"",,,Valor,Valor,,,Data,,
+Compet.,Guia,Data Proc.,,,,,,,Transação
+"",,,Informado,Processado,Pagto Liberado Glosa,Pago,,,
+Abr/2015,200,10/04/2015,"1.000,00","1.000,00","1.000,00 0,0","0,00",,,Inclusão
+Mai/2015,200,10/05/2015,"1.000,00","1.000,00","1.000,00 0,00","1.200,00",10/05/2015,,Inclusão
+Ago/2015,200,15/08/2015,"1.000,00","1.000,00","1.000,00 0,00","-200,00",15/08/2015,,Inclusão
+Procedimento,,,,,
+"",Quant.,Valor,,Quant.,Valor
+"",,,,,
+"",Informada,Informado,,Paga,Pago
+Item,,,,,
+1,1,"200,00",0,,"0,00"
+2,2,"800,00",0,,"0,00"
+Procedimento,,,,
+"",Quant.,Valor,Quant.,Valor
+"",,,,
+"",Informada,Informado,Paga,Pago
+Item,,,,
+1,1,"200,00",1,"200,00"
+2,2,"800,00",2,"1.000,00"
+Procedimento,,,,
+"",Quant.,Valor,Quant.,Valor
+"",,,,
+"",Informada,Informado,Paga,Pago
+Item,,,,
+2,2,"800,00",2,"-200,00"
+"",,,Valor,Valor,Valor,Valor,Valor,,
+Compet.,Guia,Data Proc.,,,,,,Data Pagto,Transação
+"",,,Informado,Processado,Liberado,Glosa,Pago,,
+Set/2014,500,10/09/2014,"1.000,00","800,00","800,00","200,00","800,00",10/09/2014,Inclusão
+Procedimento,,,,,
+"",Quant.,Valor,Quant.,,Valor Pago
+"",,,,Valor Pago,
+"",Informada,Informado,Paga,,Fornec.
+Item,,,,,
+1,5,"500,00",5,"500,00","0,00"
+2,2,"200,00",1,"100,00","0,00"
+3,3,"300,00",2,"200,00","0,00"
+"",,,,,Valor Valor,Valor,,,
+"",,,Valor,Valor,,,Data,,
+Compet.,Guia,Data Proc.,,,,,,,Transação
+"",,,Informado,Processado,Pagto Liberado Glosa,Pago,,,
+Out/2014,500,10/10/2014,"1.000,00","900,00","100,00 100,00","100,00",10/10/2014,,Inclusão
+Procedimento,Quant.,Valor,Quant.,,Valor Pago
+"",,,,Valor Pago,
+Item,Informada,Informado,Paga,,Fornec.
+3,3,"300,00",1,"100,00","0,00"
+Tabela,Código,Valor,Quant.,Quant.,Valor
+referência,procedimento/item,Informado,Informada,Paga,Pago
+98,1000,"5.000,00",1,1,"5.000,00"
+22,31309054,,,1,
+"",,,,,Informações do atendimento,,,,
+"",,,,,Id.Vlr,,Valo,,
+"",,,CNS,,No Reg. OPS,Valor,,,
+"",No Reg.,,,,Data Pré,,r,Data do,
+Compet.,,Prestador,Benefi,Guia,Intermediári,Informad,,,Operação
+"",OPS,,,,Proc. Estabel,,Pag,Pagto,
+"",,,ciário,,a,o,,,
+"",,,,,.,,o,,
+"",,,,,15/06/201,,,,
+Jun/17,000001,10,15,120,123456,100,0,,Inclusão
+"",,,,,7,,,,
+"",,,,,15/07/201,,,15/07/201,
+Jul/17,000001,10,15,120,123456,100,100,,Inclusão
+"",,,,,7,,,7,
+"",,,,Informações do atendimento,,,,,
+"",,,,,Id.Vlr,,,,
+"",,,,No Reg. OPS,,Valor,,Data,
+"",No Reg.,,CNS,Data,Pré,,Valor,,Operaçã
+Compet.,,Prestador,,Guia Intermediári,,Informad,,do,
+"",OPS,,Beneficiário,Proc.,Estabe,,Pago,,o
+"",,,,a,,o,,Pagto,
+"",,,,,l.,,,,
+"",,CNPJ da,,,,,,,
+"",,,,15/09/20,,,,,
+Set/17,000001,operadora,156,120 17,,60,0,,Inclusão
+"",,000001,,,,,,,
+"",,CNPJ da,,,,,,,
+"",,,,15/09/20,,,,,
+Set/17,000001,operadora,934,120,,60,0,,
+"",,,,17,,,,,Inclusão
+"",,000001,,,,,,,
+"",,,Informações de contratação por valor pré-estabelecido,
+"",No Reg.,,No Reg. OPS Id.Vlr Pré Valor Cobertura,
+Compet.,,Prestador,Data Proc.,Operação
+"",OPS,,Intermediária Estabel. Contratada,
+Ago/2017,000001,,"15/08/2017 123456 321 5.000,00",Inclusão
+"",,,,,Informações do atendimento,,,,
+"",,,CNS,,No Reg. OPS,Valor,,Data,
+"",No Reg.,Presta,,,Id.Vlr Pré,,Valor,,Operaçã
+Compet.,,,Beneficiári,Guia,Data Proc. Intermediári,Informad,,do,
+"",OPS,dor,,,Estabel.,,Pago,,o
+"",,,o,,a,o,,Pagto,
+Ago/2017,000001,10,152,120,10/08/2017 123456 321,"0,00","0,00",,Inclusão
+Ago/2017,000001,29,235,120,10/08/2017 123456 321,"0,00","0,00",,Inclusão
+"",,Informações de contratação por valor pré-estabelecido,,
+"",,No Reg. OPS Id.Vlr Pré,Valor Cobertura,
+Compet.,No Reg. OPS,Prestador Data Proc.,,Operação
+"",,Intermediária Estabel.,Contratada,
+Out/17,000001,57 05/10/2017 451,"15.000,00",Inclusão
+"",,,,Informações do atendimento,,,,,
+"",No,,,,Id.Vlr,,,Data,
+"",,,CNS,No Reg. OPS,,Valor,Valor,,
+Compet.,Reg.,Prestador,,Guia Data Proc.,Pré,,,do,Operação
+"",,,Beneficiário,Intermediária,,Informado,Pago,,
+"",OPS,,,,Estabel.,,,Pagto,
+Out/17,000001,57,543,120 05/10/2017,451,0,0,,Inclusão
+Out/17,000001,57,723,120 05/10/2017,451,0,0,,Inclusão
+"",,Informações de contratação por valor pré-estabelecido,,
+"",No Reg.,No Reg. OPS Id.Vlr Pré,Valor Cobertura,
+Competência,,Prestador Data Proc.,,Operação
+"",OPS,Intermediária Estabel.,Contratada,
+Mai/17,000001,98 12/05/2017 964,"12.000,00",Inclusão
+"",,,,,Informações do atendimento,,,,
+"",,,,,Id.Vlr,,,,
+"",No Reg.,,CNS,,No Reg. OPS,Valor,Valor,Data do,
+Compet.,,Prestador,,Guia,Data Proc. Pré,,,,Operação
+"",OPS,,Benef,,Intermediária,Informado,Pago,Pagto,
+"",,,,,Estabel.,,,,
+Mai/17,000001,98,612,120,12/05/2017 964,10,10,12/05/2017,Inclusão
+Mai/17,000001,98,96,120,12/05/2017 964,10,10,12/05/2017,Inclusão
+"",,,Informações do Fornecimento,,,
+"",,Data,CNS do Id.,,Valor Total dos,
+Competência,No Reg. OPS,,,,,Operação
+"",,Fornecimento,Beneficiário Fornecimeto,,itens fornecidos,
+ago/17,1,15/08/2017,125 321,,"2.000,00",Inclusão
+"",Informações dos itens Fornecidos,
+Tabela de,Qtde,Valor Item
+"",Código do item,
+Referência,Informada,fornecido
+20,20105037 5,200
+20,20104430 3,150
+"",Despesas assistencias de outras formas de remuneração,,,,,
+Competência,"Nr.RegOperadora",Data Proc.,Id.Recebedor,"Valor totalinformado",Valor total pago,Operação
+"",Nr.Reg,Valor total,,,,
+Competência,Data Proc.,Id.Recebedor,Valor total pago,Operação,,
+"",Operadora,informado,,,,
+nov/17,1,02/11/2017,762,"6.000,00","6.000,00",Inclusão
+nov/17,1,02/11/2017,321,"16.000,00","16.000,00",Inclusão
+Competência
+Competência
+"Nr.RegOperadora"
+Nr.Reg
+Operadora
+Data Proc.
+Data Proc.
+Id.Recebedor
+Id.Recebedor
+"Valor totalinformado"
+Valor total
+informado
+Valor total pago
+Valor total pago
+Operação
+Operação
+Tabela de Tipo do Demandante
+Código Descrição da categoria
+1 Operadora
+2 Prestador de serviço
+3 Consumidor
+4 Gestor
+5 ANS
+"",Tabela de Categoria do Padrão TISS
+Código,Descrição da categoria
+1,Componente Organizacional
+2,Componente de Conteúdo e Estrutura
+3,Componente de Representação de Conceitos em Saúde
+4,Componente de Comunicação
+5,Componente de Segurança e Privacidade
+18,"Terminologia de diárias, taxas e gases medicinais"
+19,Terminologia de materiais e OPME
+20,Terminologia de medicamentos
+22,Terminologia de procedimentos e eventos em saúde
+23,Terminologia de caráter do atendimento
+24,Terminologia de Classificação Brasileira de Ocupações (CBO)
+25,Terminologia de código da despesa
+26,Terminologia de conselho profissional
+27,Terminologia de débitos e créditos
+28,Terminologia de dentes
+29,Terminologia de diagnóstico por imagem
+30,Terminologia de Escala de capacidade funcional (ECOG - Escala de Zubrod)
+31,Terminologia de estadiamento do tumor
+32,Terminologia de faces do dente
+33,Terminologia de finalidade do tratamento
+34,Terminologia de forma de pagamento
+35,Terminologia de grau de participação
+36,Terminologia de indicador de acidente
+37,Terminologia de Indicador de débito ou crédito
+38,"Terminologia de mensagens (glosas, negativas e outras)"
+39,Terminologia de motivo de encerramento
+40,Terminologia de origem do evento de atenção à saúde
+41,Terminologia de regime de internação
+42,Terminologia de regiões da boca
+43,Terminologia de sexo
+44,Terminologia de situação inicial do dente
+45,Terminologia de status da solicitação
+46,Terminologia de status do cancelamento
+47,Terminologia de status do protocolo
+48,Terminologia de técnica utilizada
+49,Terminologia de tipo de acomodação
+50,Terminologia de tipo de atendimento
+51,Terminologia de tipo de atendimento em odontologia
+52,Terminologia de tipo de consulta
+53,Terminologia de tipo de demonstrativo
+54,Terminologia de tipo de guia
+55,Terminologia de tipo de faturamento
+56,Terminologia de natureza da guia
+57,Terminologia de tipo de internação
+58,Terminologia de tipo de quimioterapia
+59,Terminologia de unidade da federação
+60,Terminologia de unidade de medida
+61,Terminologia de via de acesso
+62,Terminologia de via de administração
+63,Terminologia de grupos de procedimentos e itens assistenciais para envio para ANS
+64,Terminologia de forma de envio de procedimentos e itens assistenciais para ANS
+65,Terminologia de metástases
+66,Terminologia de nódulo
+67,Terminologia de tumor
+68,Terminologia de categoria de despesa
+69,Terminologia de versão do componente de comunicação padrão
+70,Terminologia de forma de envio do padrão
+71,Terminologia de tipo de atendimento por operadora intermediária
+72,Terminologia de tipo de identificação de beneficiário
+73,Terminologia de etapas de autorização
+74,Terminologia de motivos de ausência do código de validação
+87,Terminologia de tabelas de domínio
+100,Legenda da mensagem de verificação de elegibilidade
+101,Legenda da mensagem de resposta à verificação de elegibilidade
+102,"Legenda da mensagem de solicitação de autorização para realização deprocedimentos"
+103,Legenda da mensagem de autorização para realização de procedimentos
+104,Legenda da mensagem de envio de lote de anexos
+105,Legenda da mensagem de recebimento de lote de anexos
+106,Legenda da mensagem de solicitação de status de autorização
+107,Legenda da mensagem de situação do status de autorização
+108,Legenda da mensagem de envio de lote de guias para cobrança
+109,Legenda da mensagem de recebimento de lote de guias de cobrança
+110,Legenda da mensagem de solicitação de status do protocolo
+111,Legenda da mensagem de situação do protocolo de cobrança
+112,Legenda da mensagem de recurso de glosa
+113,Legenda da mensagem de recebimento do recurso de glosa
+114,Legenda da mensagem de resposta ao recurso de glosa
+115,Legenda da mensagem de solicitação de status do recurso de glosa
+116,Legenda da mensagem de solicitação de demonstrativos de retorno
+117,Legenda da mensagem de demonstrativos de retorno para o prestador
+118,Legenda da mensagem de comunicação de internação ou alta do beneficiário
+119,"Legenda da mensagem de resposta à comunicação de internação ou alta dobeneficiário"
+120,Legenda da mensagem de solicitação de cancelamento de guia
+121,Legenda da mensagem de resposta a solicitação de cancelamento da guia
+122,Legenda da mensagem de informação acerca da negativa de autorização
+123,Legenda da mensagem de informações sobre partos
+124,Legenda da mensagem de envio de dados para ANS
+125,Legenda da mensagem de utilização de serviços
+126,Legenda da mensagem de negativa de autorização
+127,Legenda da mensagem de informação sobre partos
+128,Mensagem de verificação de elegibilidade (verificaElegibilidade)
+129,Mensagem de resposta à verificação de elegibilidade (respostaElegibilidade)
+130,"Mensagem de solicitação de autorização para realização de procedimentos(solicitacaoProcedimento)"
+131,Mensagem de autorização para realização de procedimentos (autorizaçãoServiços)
+132,Mensagem de envio de lote de anexos (LoteAnexos)
+133,Mensagem de recebimento de lote de anexos (recebimentoAnexo)
+134,Mensagem de solicitação de status de autorização (solicitaStatusAutorização)
+135,Mensagem de situação do status de autorização (situaçãoAutorização)
+136,Mensagem de envio de lote de guias para cobrança (Loteguias)
+137,Mensagem de recebimento de lote de guias de cobrança (recebimentoLote)
+138,Mensagem de solicitação de status do protocolo (solicitacaoStatusProtocolo)
+139,Mensagem de situação do protocolo de cobrança (situacaoProtocolo)
+140,Mensagem de recurso de glosa (recursoGlosa)
+141,Mensagem de recebimento do recurso de glosa (recebimentoRecursoGlosa)
+142,Mensagem de resposta ao recurso de glosa (respostaRecursoGlosa)
+143,"Mensagem de solicitação de status do recurso de glosa(solicitaçãoStatusRecursoGlosa)"
+144,"Mensagem de solicitação de demonstrativos de retorno(solicitaçãoDemonstrativoRetorno)"
+145,Mensagem de demonstrativos de retorno para o prestador (demonstrativosretorno)
+146,"Mensagem de comunicação de internação ou alta do beneficiário(comunicacaoInternacao)"
+147,"Mensagem de resposta à comunicação de internação ou alta do beneficiário(reciboComunicacao)"
+148,Mensagem de solicitação de cancelamento de guia (cancelaGuia)
+149,Mensagem de resposta a solicitação de cancelamento da guia (reciboCancelaGuia)
+150,Mensagem de envio de dados para ANS (envioOperadorasANS)
+151,Anexo de outras despesas
+152,Anexo de solicitação de quimioterapia
+153,Anexo de solicitação de radioterapia
+154,Anexo de solicitação OPME
+155,Anexo tratamento odontológico - situação inicial
+156,Guia de comprovante presencial
+157,Guia de consulta
+158,Guia de demonstrativo de análise da conta
+159,Guia de demonstrativo de pagamento
+160,Guia de demonstrativo de pagamento - tratamento odontológico
+161,Guia de honorários
+162,Guia de recurso de glosa
+163,Guia de recurso de glosa odontológica
+164,Guia de resumo de internação
+165,Guia de serviços profissionais/serviço auxiliar de diagnóstico e terapia
+166,Guia de solicitação de internação
+167,Guia de solicitação de prorrogação de internação ou complementação do tratamento
+168,Guia de tratamento odontológico
+Tabela de Tipo de Solicitação
+Código Descrição da categoria
+1 Alteração
+2 Inclusão
+3 Exclusão
+Análise Técnica - GT,,,,
+"",Data da,,,
+Forma de Análise,,Análise,Justificativa,Encaminhamento
+"",Análise,,,
+"",,,Atender o processo de,
+"",,,,APEX MONORAIL - CATETER BALAO DE
+"",,,trabalho entre,
+Padrão COPISS,5/8/2014,Acatar,,DILATACAO PARA PTCA -
+"",,,operadoras e,
+"",,,,H7493895908500
+"",,,prestadores,
+Arquivos do Padrão TISS,Versão vigente
+Componente Organizacional,201606
+Componente de Conteúdo e Estrutura,201605
+Componente de Representação de Conceitos em Saúde (Terminologia,
+"",201606
+Unificada da Saúde Suplementar),
+Componente de Segurança e Privacidade,201311
+Componente de Comunicação,03.03.00
